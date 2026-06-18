@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prelim Project</title>
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('hawkins.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+    body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 200%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    mix-blend-mode: multiply;
+	
+}
+
+        header {
+            color: #fff;
+            padding: 20px;
+            text-align: auto;
+		position: relative;
+    	z-index: 1;
+        }
+        nav {
+            background-color: none;
+            padding: 10px 80px;
+            text-align: right;
+
+        }
+        
+        nav a {
+            color: #F7F9F9;
+            text-decoration: none;
+            padding: 20px 30px;
+        }
+        
+        nav a:hover {
+            color: #FF5733; 
+        }
+        
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+        
+        .hero img {
+            position: absolute;
+            top: 50px;
+            left: 49%;
+            transform: translateX(-50%);
+        }
+
+
+        section p {
+            font-weight: bold;
+            color: #fff;
+	    margin-left: -20px;
+            margin-top: 180px;
+	    text-shadow: 2px 2px 4px #000;
+		 position: relative; 
+    z-index: 1;
+        }
+
+        .logo {
+            width: 100px; 
+            height: auto; 
+            margin-left: 80px;
+            margin-top: -50px;
+	z-index: 1;
+        }
+        
+        .watch-now {
+            background-color: #db0000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 5px;
+	    margin-left: -20px;
+            display: inline-block;
+		position: relative;
+    	z-index: 1;	
+        }
+        .watch-now:hover {
+            background-color: #D6C9C7;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="trending.html">Trending</a>
+            <a href="#">About</a>
+        </nav>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+
+    <section class="hero">
+        <img src="el.png" alt="Your Image" width="450" height="250">
+
+   
+        <p>When a young boy vanishes, a small town <br> uncovers a mystery involving secret  <br> experiments, terrifying supernatural forces <br> and one strange little girl.</p>
+
+        <a href="#" class="watch-now">Watch Now</a>
+    </section>
+
+</body>
+</html>

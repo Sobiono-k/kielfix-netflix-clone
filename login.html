@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sign In</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 25px 50px;
+        }
+
+        header img {
+            height: 45px;
+        }
+
+        .login-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 4px;
+            padding: 60px 68px;
+            width: 100%;
+            max-width: 450px;
+            min-height: 660px;
+        }
+
+        .login-box h1 {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 16px 20px;
+            background: #333;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            background: #454545;
+            outline: none;
+        }
+
+        .btn-signin {
+            width: 100%;
+            padding: 16px;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 24px;
+            transition: background 0.1s ease-in;
+        }
+
+        .btn-signin:hover {
+            background-color: #c11119;
+        }
+
+        .form-help {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            color: #b3b3b3;
+            font-size: 13px;
+        }
+
+        .form-help a {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+
+        .form-help a:hover {
+            text-decoration: underline;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .remember-me input {
+            accent-color: #737373;
+        }
+
+        .login-footer {
+            margin-top: 40px;
+            color: #737373;
+            font-size: 16px;
+        }
+
+        .login-footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .captcha-text {
+            margin-top: 14px;
+            font-size: 13px;
+            color: #8c8c8c;
+            line-height: 1.4;
+        }
+
+        .captcha-text a {
+            color: #0071eb;
+            text-decoration: none;
+        }
+
+        .captcha-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive design for mobile screens */
+        @media (max-width: 740px) {
+            body {
+                background: #000;
+            }
+            header {
+                padding: 20px 24px;
+            }
+            header img {
+                height: 35px;
+            }
+            .login-box {
+                padding: 20px 0;
+                background-color: #000;
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Netflix Logo">
+    </header>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Sign In</h1>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="email" placeholder="Email or phone number" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn-signin">Sign In</button>
+                
+                <div class="form-help">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#">Need help?</a>
+                </div>
+            </form>
+
+            <div class="login-footer">
+                <p>New to Kielflix? <a href="">Sign up now</a>.</p>
+                <p class="captcha-text">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
