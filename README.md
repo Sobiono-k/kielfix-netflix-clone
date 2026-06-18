@@ -5,7 +5,7 @@
 A high-fidelity front-end web application that replicates the premium user interface and user experience (UI/UX) of modern streaming services like Netflix. Named **Kielfix**, this multi-page static website is built for web development project evaluations, highlighting clean HTML5 structuring, modern CSS styling, and responsive layout architectures.
 
 ## 🚀 Live Demo
-👉 [View Live Project via GitHub Pages](https://yourusername.github.io/kielfix-streaming-platform)
+👉 [View Live Project via GitHub Pages](https://kielfix-netflix-clone.vercel.app/)
 
 ---
 
